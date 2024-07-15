@@ -1,0 +1,61 @@
+:root[data-theme="light"] {
+  --background-color: white;
+  --text-color: black;
+}
+
+:root[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body[data-theme="light"] {
+  background-color: var(--background-color);
+  color: var(--text-color)
+}
+
+
+body[data-theme="dark"] {
+  background-color: rgb(27, 27, 27);
+  color: rgb(135, 135, 135);
+}
+
+h1,
+h2 {
+  font-family: Lato;
+}
+
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.label input {
+  vertical-align: middle;
+}
+
+.label[aria-checked='true'] {
+  text-decoration: line-through;
+}

@@ -89,7 +89,6 @@ export const getValueByPath = <T extends Record<string, unknown>>(
   if (keys.length === 0) {
     return path;
   }
-
   const lastKey = keys.at(-1)!;
   if (lastKey === "None") {
     return "Отсутствует";
